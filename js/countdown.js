@@ -23,12 +23,12 @@ function initializeClock(id, endtime) {
     const secondsSpan = clock.querySelector('.seconds');
 
     function updateClock() {
-        const date = getTimeRemaining(endtime);
-        daysSpan.innerHTML = date.days.toString();
-        hoursSpan.innerHTML = ('0' + date.hours.toString()).slice(-2);
-        minutesSpan.innerHTML = ('0' + date.minutes.toString()).slice(-2);
-        secondsSpan.innerHTML = ('0' + date.seconds.toString()).slice(-2);
-        if (t.total <= 0) {
+        const remainingTime = getTimeRemaining(endtime);
+        daysSpan.innerHTML = remainingTime.days.toString();
+        hoursSpan.innerHTML = ('0' + remainingTime.hours.toString()).slice(-2);
+        minutesSpan.innerHTML = ('0' + remainingTime.minutes.toString()).slice(-2);
+        secondsSpan.innerHTML = ('0' + remainingTime.seconds.toString()).slice(-2);
+        if (remainingTime.total <= 0) {
             clearInterval(interval);
         }
     }
