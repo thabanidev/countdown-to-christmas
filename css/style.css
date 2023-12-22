@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+#clock {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+#clock > div {
+    background: #333;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 10px;
+}
+#clock span {
+    font-weight: bold;
+    font-size: 4em;
+}
+.small-text {
+    color: #888;
+    font-size: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
