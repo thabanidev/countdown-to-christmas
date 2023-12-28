@@ -37,5 +37,5 @@ function initializeClock(id, endtime) {
 }
 
 // Setting the date we're counting down to
-let deadline = 'December 25 2023';
+let deadline = 'January 01 2024';
 initializeClock('clock', deadline);
